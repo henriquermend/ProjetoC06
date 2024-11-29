@@ -1,13 +1,4 @@
-<<<<<<< HEAD
-# ransomware_interface.py
 
-class Ransomware:
-    def encrypt_files(self, directory):
-        raise NotImplementedError("This method must be implemented by subclasses.")
-
-    def decrypt_files(self, directory, key):
-        raise NotImplementedError("This method must be implemented by subclasses.")
-=======
 from abc import ABC, abstractmethod
 
 # Classe abstrata para definir métodos de criptografia e descriptografia
@@ -125,4 +116,4 @@ class DummyEncryption(EncryptionMethod):
             bytes: Conteúdo original.
         """
         return content[::-1]  # Reverte novamente para restaurar o conteúdo original
->>>>>>> cf674cf (Entrega Final)
+
