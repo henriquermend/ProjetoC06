@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-# file_manager.py
-
-import os
-
-class FileManager:
-    @staticmethod
-    def create_dummy_files(directory):
-        if not os.path.exists(directory):
-            os.makedirs(directory)
-        for i in range(5):
-            filepath = os.path.join(directory, f"file{i}.txt")
-            with open(filepath, "w") as file:
-                file.write(f"Dummy content {i}")
-=======
 """
 Este arquivo faz parte de um projeto educacional que simula operações de criptografia
 e descriptografia de arquivos. Ele é projetado para uso em ambiente controlado
@@ -102,4 +87,4 @@ class FileManager:
                 except Exception as e:  # Captura qualquer exceção durante o processo
                     logs.append(f"Erro ao descriptografar {filename}: {e}")  # Adiciona log de erro
         return logs  # Retorna a lista de logs
->>>>>>> cf674cf (Entrega Final)
+
